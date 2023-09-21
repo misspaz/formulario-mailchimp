@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario MailChimp</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="columna-izq">
+        <img
+          class="mono"
+          src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_mailchimp_icon_157889.png"
+          alt=""
+        />
+      </div>
+      <div class="columna-dcha">
+        <div class="titulos">
+          <h1>Welcome to Mailchimp</h1>
+          <p>
+            Find your people. Engage your customers. Build your brand. Do it all
+            with Mailchimp's Marketing Platform. Already have an account?
+            <span>Log in</span>
+          </p>
+        </div>
+        <form class="formulario">
+          <fieldset>
+            <label for="email"
+              >Email
+              <input
+                placeholder="Pon tu email"
+                id="email"
+                name="email"
+                type="email"
+                required
+            /></label>
+            <label for="username"
+              >Username
+              <input
+                placeholder="Pon tu username"
+                id="username"
+                name="fusername"
+                type="text"
+                maxlength="20"
+                required
+            /></label>
+            <label for="password"
+              >Password
+              <input
+                placeholder="Pon tu password"
+                id="password"
+                name="password"
+                type="password"
+                minlength="3"
+                pattern="[a-z0-5]{8,}"
+                required
+            /></label>
+          </fieldset>
+        </form>
+
+        <ul>
+          <li>One lower case character</li>
+          <li>One uppercase character</li>
+          <li>One special character</li>
+          <li>One number</li>
+          <li>8 characters minimum</li>
+        </ul>
+
+        <div class="footer">
+          <button class="boton" type="submit">Sign up</button>
+          <label class="texto" for="texto"
+            ><input class="input-check" type="checkbox" id="texto" />I don't
+            want to receive emails aboout new Mailchimp products, best
+            practices, or special offers.</label
+          >
+        </div>
+        <div class="disclaimer">
+          <h4>
+            By clicking the "Sign up" button, you are creating a Mailchimp
+            account and you agree to Mailchimp's <a href="">Terms of Use</a> and
+            <a href="">Privacy Policy</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
